@@ -22,8 +22,10 @@ login_manager.login_view = 'auth.login'
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+# loads the dummy html templates
 app.jinja_loader = ChoiceLoader([
-    FileSystemLoader('../backend/frontend')
+    FileSystemLoader('../frontend')
 ])
 
 from backend.routes.routes import main
