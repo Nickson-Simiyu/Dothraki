@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS to allow communication with the React frontend
 
 COMPASS_API_URL = "https://dev.compass.tabiya.tech/api/chat"
-COMPASS_API_KEY = "your_compass_api_key"  # Replace with your actual Compass API key
+COMPASS_API_KEY = "compass_api_key"  # Compass API key
 
 @app.route("/chatbot", methods=["POST"])
 def chatbot():
