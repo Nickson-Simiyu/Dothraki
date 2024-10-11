@@ -1,1 +1,0 @@
-# for chatbot intergratioon
